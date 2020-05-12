@@ -1,0 +1,21 @@
+{
+  "name": "playstore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "playstore.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "node": "^14.2.0",
+    "nodemon": "^2.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node playstore.js",
+    "dev": "nodemon playstore.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
