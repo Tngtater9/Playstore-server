@@ -29,6 +29,7 @@ app.get('/apps',(req, res) =>{
     if(genres){
         genres = genres.toLowerCase();
         genres = genres.charAt(0).toUpperCase() + genres.slice(1);
+
         
         if(!['Action', 'Puzzle', 'Strategy', 'Casual', 'Arcade', 'Card'].includes(genres)){
             res
@@ -42,6 +43,4 @@ app.get('/apps',(req, res) =>{
     res.json(apps);
 });
 
-app.listen(8000, () => {
-    console.log('Server is listening on PORT 8000');
-})
+module.exports = app;
